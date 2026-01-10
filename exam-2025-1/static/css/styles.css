@@ -1,0 +1,49 @@
+body {
+    font-size: 1em;
+    min-height: 100vh;
+}
+
+.background-img {
+    background-color: black;
+    background-image: url(/exam-2025-1/static/images/background6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.exam-name {
+    font-size: 2.5rem;
+}
+
+.exam-name-nav {
+    font-weight: bold; 
+    font-size: 1.2rem;
+}
+
+.list-group-item.active {
+    border: none !important;
+    background-color: gray !important;
+}
+
+@media (max-width: 767px) { 
+    body {
+        font-size: 1em;
+    }
+    .exam-name {
+        font-size: 1.6rem;
+    }   
+    .exam-name-nav {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+}

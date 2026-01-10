@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex" />
+	<title>Лабораторная работа № 7 | Основы веб-технологий</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/task.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1 class="header__title">Лабораторная работа 7</h1>
+		<hr>
+	</header>
+
+	<main class="task">
+		<p class="task__short">
+			Напишите функцию loadDishes(), которая будет загружать данные о доступных блюдах при помощи запроса к API.
+		</p>
+
+		<div class="task__full">
+			<h2 class="task__full_title">
+				Порядок выполнения
+			</h2>
+
+			<p class="task__full_box_text">
+				Напишите функцию loadDishes(), добавив в нее запрос к API для получения данных о блюдах.
+			</p>
+
+			<p class="task__full_box_text">
+				Данные с сервера приходят в формате JSON. Пример:
+			</p>
+
+			<pre>
+[
+  {
+    "category": "soup",
+    "count": "350 г",
+    "image": "http://lab7-api.std-900.ist.mospolytech.ru/images/soups/gazpacho",
+    "keyword": "gaspacho",
+    "kind": "veg",
+    "name": "Гаспачо",
+    "price": 195
+  },
+  {
+    "category": "soup",
+    "count": "330 г",
+    "image": "http://lab7-api.std-900.ist.mospolytech.ru/images/soups/mushroom_soup",
+    "keyword": "gribnoy",
+    "kind": "veg",
+    "name": "Грибной суп-пюре",
+    "price": 185
+  }
+]
+			</pre>
+
+
+
+			<ul class="task__full_box_h4 h4-list">
+				<li>Для обращения к серверу используйте fetch или XMLHttpRequest.</li>
+				<li>Все блюда должны загружаться на страницу при помощи API.</li>
+				<li>Внешнее отображение страницы должно остаться прежним.</li>
+				<li>Все остальные функции также должны корректно работать (фильтрация, выбор блюда, расчет итоговой стоимости,
+					проверка состава заказа).</li>
+			</ul>
+
+			<h2 class="task__full_title">API URL</h2>
+
+			<ul class="task__full_box_h4 h4-list">
+				<li>Для тех, кто использует хостинг Московского Политеха: http://lab7-api.std-900.ist.mospolytech.ru/api/dishes</li>
+				<li>Для тех, кто использует Netlify или GitHub Pages: https://edu.std-900.ist.mospolytech.ru/labs/api/dishes</li>
+			</ul>
+
+			<div class="task__full_box task-requirements">
+				<h3 class="task__full_box_title">
+					Защита
+				</h3>
+
+				<p class="task__full_box_text">
+					Чтобы сдать лабораторную, необходимо выполнить все <a href="requirements.html" target="_blank">требования</a>.
+				</p>
+
+			</div>
+
+			<div class="task__full_box task-additions">
+				<h3 class="task__full_box_title">
+					Материалы для изучения
+				</h3>
+
+				<div class="task__full_box_link-box">
+
+					<a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data"
+						target="_blank">Получение данных с сервера [MDN]</a>
+					<a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects/JSON" target="_blank">Работа с JSON
+						[MDN]</a>
+					<a href="https://learn.javascript.ru/async" target="_blank">Промисы, async/await [Learn JS]</a>
+					<a href="https://doka.guide/js/async-await/" target="_blank">async/await
+						[Doka]</a>
+						<a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Using_promises"
+						target="_blank">Использование промисов
+						[MDN]</a>
+					<a href="https://learn.javascript.ru/fetch" target="_blank">Fetch [Learn JS]</a>
+					<a href="https://learn.javascript.ru/xmlhttprequest" target="_blank">XMLHttpRequest [Learn JS]</a>
+					<a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">Fetch API [MDN]</a>
+					<a href="https://doka.guide/js/fetch/" target="_blank">fetch() [Doka]</a>
+					<a href="https://developer.mozilla.org/ru/docs/Web/HTTP/CORS" target="_blank">Cross-Origin Resource Sharing
+						(CORS) [MDN]</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</main>
+
+</body>
+
+</html>
